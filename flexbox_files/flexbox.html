@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    
+<link rel="stylesheet" href="./flexbox_files/styles.css"></head>
+
+<body>
+
+    <div class="container">
+        <h1>Let's start getting a little more fancy!</h1>
+        <img src="./flexbox_files/elephant-banner.jpeg" alt="">
+        
+        <div class="columns">
+
+            <div class="col col-1">
+                <h2>Lorem ipsum sit </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem esse rerum numquam placeat
+                    laboriosam non ipsum quaerat quibusdam, velit nobis dolorem nostrum? Ducimus in iure dolores dolore.
+                    Voluptatum, at?
+                    Ratione, fuga maxime adipisci laborum modi sed quaerat pariatur, obcaecati hic excepturi praesentium
+                    deserunt voluptatibus sunt, ut dicta eos eveniet optio placeat. Ea, obcaecati! Est sapiente quia
+                    minima rem dignissimos.Similique veniam quos qui eligendi distinctio, sit voluptatibus omnis rerum.
+                    Maxime dolores dolor sunt consequatur unde cupiditate molestias nisi sapiente illum dicta incidunt
+                    exercitationem fugit, temporibus explicabo non rerum nam?</p>
+            </div>
+
+
+            <div class="col col-2">
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem esse rerum numquam placeat
+                    laboriosam non ipsum quaerat quibusdam, velit nobis dolorem nostrum? Ducimus in iure dolores dolore.
+                    Voluptatum, at?
+                    Ratione, fuga maxime adipisci laborum modi sed quaerat pariatur, obcaecati hic excepturi praesentium
+                    deserunt voluptatibus sunt, ut dicta eos eveniet optio placeat. Ea, obcaecati! Est sapiente quia
+                    minima rem dignissimos.Similique veniam quos qui eligendi distinctio, sit voluptatibus omnis rerum.
+                    Maxime dolores dolor sunt consequatur unde cupiditate molestias nisi sapiente illum dicta incidunt
+                    exercitationem fugit, temporibus explicabo non rerum nam?</p>
+            </div>
+
+            <div class="col col-1 col-bg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem esse rerum numquam placeat
+                    laboriosam non ipsum quaerat quibusdam, velit nobis dolorem nostrum? Ducimus in iure dolores dolore.
+                    Voluptatum, at?
+                    Ratione, fuga maxime adipisci laborum modi sed quaerat pariatur, obcaecati hic excepturi praesentium
+                    deserunt voluptatibus sunt, ut dicta eos eveniet optio placeat. Ea, obcaecati! Est sapiente quia
+                    minima rem dignissimos.Similique veniam quos qui eligendi distinctio, sit voluptatibus omnis rerum.
+                    Maxime dolores dolor sunt consequatur unde cupiditate </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="columns">
+
+            <div class="col col-3">
+                <h2>Lorem ipsum dolor, sit amet consectetur</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem esse rerum numquam placeat
+                    laboriosam non ipsum quaerat quibusdam, velit nobis dolorem nostrum? Ducimus in iure dolores dolore.
+                    Voluptatum, at?
+                    Ratione, fuga maxime adipisci laborum modi sed quaerat pariatur, obcaecati hic excepturi praesentium
+                    deserunt voluptatibus sunt, ut dicta eos eveniet optio placeat. Ea, obcaecati! Est sapiente quia
+                    minima rem dignissimos.Similique veniam quos qui eligendi distinctio, sit voluptatibus omnis rerum.
+                    Maxime dolores dolor sunt consequatur unde cupiditate molestias nisi sapiente illum dicta incidunt
+                    exercitationem fugit, temporibus explicabo non rerum nam?</p>
+            </div>
+            <div class="col col-1 col-bg hello">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam rem esse rerum numquam placeat
+                    laboriosam non ipsum quaerat quibusdam, velit nobis dolorem nostrum? Ducimus in iure dolores dolore.
+                    Voluptatum, at?
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow></body></html>
